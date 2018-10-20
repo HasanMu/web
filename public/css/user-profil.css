@@ -1,0 +1,50 @@
+* {box-sizing: border-box}
+
+h44 {
+    color: gray;
+}
+a{
+    color: transparent;
+    text-decoration:none;
+}
+.tab {
+    float: left;
+    border: 0px solid gray;
+    background-color: transparent;
+    width: 17%;
+    height: 300px;
+}
+.tab button {
+  font-family: 'Poppins', sans-serif;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    color: gray;
+
+}
+.tab button:hover {
+  background-color: transparent;
+}
+.tab button.active {
+  background-color: transparent;
+  color: #f9ae4a;
+  border: 1px outset gray;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
