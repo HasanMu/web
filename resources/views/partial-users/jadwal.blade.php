@@ -92,22 +92,37 @@
   <!-- Keterangan Website -->
       <div class="container-fluid ">
         <div class="container">
-            <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'jadwal-pelajaran')" id="defaultOpen">Jadwal Pelajaran
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'jadwal-piket')">Jadwal Piket</button>
-              
-
-            </div>
-
+             <div class="tab" style="width: 35% !important;">
+              <div style="display: flex;">
+                <button class="tablinks" onclick="openCity(event, 'jadwal-pelajaran')" id="defaultOpen">
+                  Jadwal Pelajaran
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'jadwal-piket')">
+                  Jadwal Piket
+                </button>
+              </div>
+              </div>
             <div id="jadwal-pelajaran" class="tabcontent">
-             <p>a</p>
+            <p>a</p>
             </div>
             <div id="jadwal-piket" class="tabcontent">
-              <p>j</p>
+              <div class="container">
+                <div class="tab" style="width: 13%;">
+                  <button id="senen" class="tablinks" onclick="senen()">Senin</button>
+                  <button id="selasa" class="tablinks" onclick="selasa()">Selas</button>
+                  <button id="rabu" class="tablinks" onclick="rabu()">Rabu</button>
+                  <button id="kamis" class="tablinks" onclick="kamis()">Kamis</button>
+                  <button id="jumat" class="tablinks" onclick="jumat()">Jumat</button>
+                  <button id="sabtu" class="tablinks" onclick="sabtu()">Sabtu</button>
+                </div>
+              </div>
             </div>  
+
+            <div id="senen" class="tabcontent">
+              senin
             </div>
-          </div>
+        </div>
+       </div>
       </div>
 
   <script src="js/jquery.min.js"></script>
@@ -143,6 +158,36 @@
     }
 
     document.getElementById("defaultOpen").click();
+
+    let senen = () => {
+      console.log('Senin');
+      $('#senen').addClass('active').siblings().removeClass('active');
+    }
+
+    let selasa = () => {
+      console.log('Selasa');
+      $('#selasa').addClass('active').siblings().removeClass('active');
+    }
+
+    let rabu = () => {
+      console.log('Rabu');
+      $('#rabu').addClass('active').siblings().removeClass('active');
+    }
+
+    let kamis = () => {
+      console.log('Kamis');
+      $('#kamis').addClass('active').siblings().removeClass('active');
+    }
+
+    let jumat = () => {
+      console.log('Jumat');
+      $('#jumat').addClass('active').siblings().removeClass('active');
+    }
+
+    let sabtu = () => {
+      console.log('Sabtu');
+      $('#sabtu').addClass('active').siblings().removeClass('active');
+    }
   </script>
 </body>
 </html>
